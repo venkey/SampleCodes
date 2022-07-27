@@ -59,4 +59,34 @@ public class SampleTest extends AbsTest{
 		}
 		return v;
 	}
+
+	@Override
+	public void breakEamplePrintNaturalNumber(int a) {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=a;i++) {
+			if(i==4) {
+				break;
+			}
+			System.out.println(i);
+		}
+		for(int i=1;i<=a;i++) {
+			if(i==8) {
+				break;
+			}
+			System.out.println(i);
+		}
+		System.out.println("");
+	}
+
+	@Override
+	public void contineEamplePrintNaturalNumber(int a) {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=a;i++){  
+	        if(i==5){  
+	            //using continue statement  
+	            continue;//it will skip the rest statement  
+	        }  
+	        System.out.println(i);  
+	    }  
+	}
 }
